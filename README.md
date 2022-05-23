@@ -36,7 +36,7 @@ Jeżeli dane zostały poprawnie wysłane, wyświetl stronę "Thank You"
 ## Linki
 
 Link do repozytorium: 
-[https://github.com/tylkocom/frontend-recruitment-task](https://github.com/tylkocom/frontend-recruitment-task)
+[https://github.com/tylkocom/tylko-frontend-recruitment](https://github.com/tylkocom/tylko-frontend-recruitment)
 
 Link do projektu: 
 [https://www.figma.com/file/96kRlhtQqkjQ5gwhVWLUqG/LP-Las-na-zawsze?node-id=0%3A1](https://www.figma.com/file/96kRlhtQqkjQ5gwhVWLUqG/LP-Las-na-zawsze?node-id=0%3A1)
