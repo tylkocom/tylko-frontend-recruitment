@@ -1,0 +1,42 @@
+.input-base {
+  @apply border border-solid border-grey-800 bg-white rounded-6 flex flex-col overflow-hidden px-16 py-8;
+
+  &__label {
+    @apply flex flex-col normal-14 text-black pb-8 ;
+  }
+
+  &__element {
+    @apply placeholder-grey-800 text-black normal-16;
+
+    &:-webkit-autofill {
+      box-shadow: 0 0 0 50px theme('colors.white') inset;
+      -webkit-text-fill-color: theme('colors.black');
+
+      &:focus {
+        box-shadow: 0 0 0 50px theme('colors.white') inset;
+        -webkit-text-fill-color: theme('colors.black');
+      }
+    }
+  }
+
+  &__error-message {
+    @apply block text-orange normal-14 ml-16 mt-4;
+  }
+
+  &.focused {
+    @apply border-black;
+  }
+
+  &.error {
+    @apply border-orange;
+
+    .input__element,
+    .input__label {
+      @apply text-orange;
+    }
+
+    &.focused {
+      @apply border-black;
+    }
+  }
+}

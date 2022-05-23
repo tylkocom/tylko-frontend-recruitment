@@ -1,0 +1,52 @@
+{
+  "name": "tylko-recruitment",
+  "description": "tylko-recruitment",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "dev-debug": "node --max-old-space-size=4096 --inspect --trace-warnings node_modules/.bin/nuxt dev",
+    "build": "nuxt build",
+    "start": "node --max-old-space-size=8192 node_modules/nuxt/bin/nuxt.js start",
+    "start-debug": "node --max-old-space-size=4096 --inspect --trace-warnings node_modules/.bin/nuxt start",
+    "generate": "nuxt generate",
+    "stylelint": "stylelint '**/*.{vue,scss}'",
+    "eslint": "eslint . --ext .js,.ts,.vue --fix",
+    "lint": "npm run eslint && npm run stylelint"
+  },
+  "dependencies": {
+    "@nuxt/types": "^2.15.8",
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/composition-api": "^0.29.3",
+    "@vueuse/core": "^5.3.0",
+    "core-js": "^3.20.2",
+    "lodash": "^4.17.21",
+    "nuxt": "^2.15.8",
+    "nuxt-i18n": "^6.28.1",
+    "portal-vue": "^2.1.7",
+    "vue-demi": "^0.11.4",
+    "vue-fragment": "1.5.1"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^2.0.3",
+    "@nuxtjs/device": "^2.1.0",
+    "@nuxtjs/eslint-config-typescript": "^6.0.1",
+    "@nuxtjs/pwa": "^3.3.5",
+    "@nuxtjs/style-resources": "^1.2.1",
+    "@nuxtjs/stylelint-module": "^4.1.0",
+    "@nuxtjs/tailwindcss": "^4.2.1",
+    "@nuxtjs/web-vitals": "^0.1.8",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-vue": "^7.20.0",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.4.5",
+    "sass-loader": "^10.2.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^22.0.0",
+    "vue-i18n-extract": "^1.1.10"
+  }
+}
