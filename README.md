@@ -14,9 +14,7 @@ Kodując korzystaj z naszego design systemu. Na codzień pracujemy z [tailwindcs
 
 Zależy nam na responsywnej stronie, w myśl techniki RWD.
 
-Wszystkie teskty powinny być tłumaczone w trzech językach: Angielski, Niemiecki, Francuski. Odpowiednie pliki z tlumaczeniami znajdują się w repozytorium.
-
-Spróbuj zakodować zmianę języka za pomocą linków w prawym dolnym rogu stopki.
+Wszystkie teskty powinny być tłumaczone w trzech językach: Angielski, Niemiecki, Francuski. Odpowiednie pliki z tlumaczeniami znajdują się w repozytorium. Spróbuj również zakodować zmianę języka za pomocą linków w prawym dolnym rogu stopki. Do tego celu możesz skorzystać z paczki `nuxt-i18n`
 
 ## Działanie sekcji
 
@@ -29,7 +27,7 @@ Logo - [https://res.cloudinary.com/cstm/image/upload/v1646903333/lp/foreverfores
 
 Dla uproszczenia przyjmijmy że operujemy walutą Euro.
 
-Po wciśnięciu przycisku wybrane w forumlarzu dane powinny wysłać się na zaślepkowy endpoint, na przykład jeden z tych które znajdziesz tutaj: [https://jsonplaceholder.typicode.com/](https://jsonplaceholder.typicode.com/). Spróbuj również zwalidować wcześniej podane dane w dowolny sposób.
+Po wciśnięciu przycisku wybrane w forumlarzu dane powinny wysłać się na zaślepkowy endpoint, na przykład jeden z tych które znajdziesz tutaj: [https://jsonplaceholder.typicode.com/](https://jsonplaceholder.typicode.com/). Spróbuj również zwalidować wcześniej podany w formularzu email w dowolny sposób.
 
 Jeżeli dane zostały poprawnie wysłane, wyświetl stronę "Thank You"
 

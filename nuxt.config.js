@@ -48,29 +48,19 @@ export default {
         ['@babel/plugin-proposal-private-methods', { loose: true }],
         ['@babel/plugin-proposal-private-property-in-object', { loose: true }]
       ]
-    },
+    }
   },
   publicRuntimeConfig: {
     axios: {
       browserBaseURL: process.env.BROWSER_BASE_URL || 'http://127.0.0.1',
       baseURL: process.env.BASE_URL || 'http://127.0.0.1'
-    },
+    }
   },
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    'nuxt-i18n',
-    'portal-vue/nuxt',
+    'portal-vue/nuxt'
   ],
   telemetry: false,
-  i18n: {
-    defaultLocale: 'en',
-    locales: [
-      { code: 'en', name: 'English', iso: 'en-GB', file: 'en.json' },
-    ],
-    langDir: 'locales/',
-    lazy: true,
-    strategy: 'prefix_except_default'
-  },
   router: {},
   axios: {
     credentials: true
@@ -79,5 +69,5 @@ export default {
     fix: true,
     configFile: './stylelint.config.js'
   },
-  tailwindcss: {},
+  tailwindcss: {}
 };
