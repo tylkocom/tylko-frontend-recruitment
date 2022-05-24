@@ -1,0 +1,29 @@
+@layer utilities {
+  .container-cstm {
+    @apply box-content max-w-[1292px] px-16 md:px-32 lg:px-48 xl:px-[88px] xl2:px-128;
+  }
+
+  .container-cstm-fluid {
+    @apply box-content px-16 md:px-32 lg:px-48 xl:px-[88px] xl2:px-128;
+  }
+
+  .long-transition {
+    @apply ease-linear duration-1000;
+  }
+
+  .basic-transition {
+    @apply ease-in-out duration-300;
+  }
+
+  .short-transition {
+    @apply ease-in-out duration-200;
+  }
+}
+
+.full-screen {
+  min-height: calc(100vh - 44px);
+
+  @screen lg {
+    min-height: calc(100vh - 61px);
+  }
+}

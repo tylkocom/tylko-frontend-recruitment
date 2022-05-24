@@ -1,0 +1,183 @@
+%arrow {
+  content: '';
+  transition-property: border-color, transform;
+
+  @apply inline-block relative border-solid border-r border-b transform transition-transform basic-transition rotate-45 m-[3px] p-[2px];
+}
+
+%link {
+  @apply bg-transparent text-grey-900 cursor-pointer no-underline transition-color basic-transition;
+  @apply hover:text-orange;
+}
+
+.link {
+  @extend %link;
+}
+
+.link--color {
+  @apply text-orange;
+  @apply hover:text-orange-900;
+}
+
+.link--light {
+  @apply hover:text-orange-900;
+}
+
+.link--arrow,
+.link--arrow-down {
+  @extend %link;
+
+  &::after {
+    @extend %arrow;
+
+    @apply rotate-45;
+  }
+}
+
+.link--arrow-right {
+  @extend %link;
+
+  &::after {
+    @extend %arrow;
+
+    @apply -rotate-45;
+  }
+}
+
+.link--arrow-up {
+  @extend %link;
+
+  &::after {
+    @extend %arrow;
+
+    @apply -rotate-135;
+  }
+}
+
+.link--arrow-left {
+  @extend %link;
+
+  &::before {
+    @extend %arrow;
+
+    @apply rotate-135;
+  }
+}
+
+.link--cheveron-animation {
+  svg {
+    @apply transform transition-transform;
+    @apply basic-transition;
+  }
+
+  &:hover svg {
+    @apply translate-x-4;
+  }
+}
+
+.link--cheveron-animation-left {
+  svg {
+    @apply transform rotate-180 transition-transform;
+    @apply basic-transition;
+  }
+
+  &:hover svg {
+    @apply translate-x-4;
+  }
+}
+
+// CTA Button
+.btn-cta {
+  @apply inline-flex items-center justify-center bg-orange text-offwhite-600 cursor-pointer bold-16;
+  @apply rounded-[30px] py-[10px] px-32;
+
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+
+  @apply hover:bg-orange-900 active:bg-orange-900;
+  @apply disabled:bg-grey-600 disabled:text-grey-700 disabled:cursor-not-allowed;
+
+  &:disabled {
+    svg {
+      @apply text-grey-700;
+
+      path {
+        @apply fill-current;
+      }
+    }
+  }
+
+  &__icon {
+    @apply mr-8;
+  }
+
+  &--hero {
+    @apply bold-16 min-w-max sm:bold-20;
+    @apply tracking-m-0_3 leading-1_3 py-[11px] px-32;
+  }
+
+  &--border {
+    @apply bg-transparent border border-solid border-offblack-600 text-offblack-600 py-[9px] px-[30px];
+    @apply hover:bg-offblack-700 hover:border-offblack-700 hover:text-offwhite-600;
+    @apply active:bg-offblack-600 active:border-offblack-600 active:text-offwhite-600;
+    @apply disabled:border-grey-800 disabled:text-grey-800 disabled:cursor-not-allowed;
+
+    &:disabled {
+      svg {
+        @apply text-grey-800;
+
+        path {
+          @apply fill-current;
+        }
+      }
+    }
+  }
+
+  &--border-white {
+    @apply bg-transparent border border-solid border-offwhite-700 text-offwhite-700 py-[9px] px-[30px];
+    @apply hover:border-offwhite-600 hover:text-offblack-600 hover:bg-offwhite-600;
+    @apply active:bg-offwhite-700 active:border-offwhite-700 active:text-offblack-600;
+    @apply disabled:cursor-not-allowed disabled:border-offblack-600 disabled:text-offblack-600;
+
+    &:disabled {
+      svg {
+        @apply text-offblack-600;
+
+        path {
+          @apply fill-current;
+        }
+      }
+    }
+  }
+}
+
+.btn-link {
+  @apply bg-transparent text-orange cursor-pointer inline-block bold-12-2 uppercase;
+  @apply disabled:text-grey-800 disabled:cursor-not-allowed;
+
+  &--arrow-right,
+  &--arrow-up,
+  &--arrow-down {
+    &::after {
+      @apply inline-block relative transform rotate-45 origin-center border-solid border-current;
+      @apply h-[0.3em] w-[0.3em] ml-[6px] top-[-0.15em] border-r-[0.1em] border-t-[0.1em];
+
+      content: '';
+    }
+  }
+
+  &--arrow-up {
+    &::after {
+      @apply -rotate-45;
+    }
+  }
+
+  &--arrow-down {
+    &::after {
+      @apply rotate-135;
+    }
+  }
+
+  &--small {
+    @apply text-offblack-600 bold-12 normal-case;
+  }
+}

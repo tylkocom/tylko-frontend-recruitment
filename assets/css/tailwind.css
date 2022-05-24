@@ -1,0 +1,5 @@
+/*
+DO NOT DELETE THIS FILE
+It's only to prevent default tailwind behavior. If this file didn't exist,
+tailwind would create it and import directives which in result would double styles.
+*/

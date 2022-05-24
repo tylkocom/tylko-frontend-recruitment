@@ -1,0 +1,129 @@
+@layer utilities {
+  @responsive {
+    .normal-9 {
+      @apply font-normal text-9 leading-1_4 tracking-0;
+    }
+
+    .bold-9 {
+      @apply font-bold text-9 leading-1_4 tracking-0;
+    }
+
+    .normal-10 {
+      @apply font-normal text-10 leading-1_4 tracking-0;
+    }
+
+    .bold-10 {
+      @apply font-bold text-10 leading-1_4 tracking-0;
+    }
+
+    .bold-10-2 {
+      @apply font-bold text-10 leading-1_4 tracking-0_5 uppercase;
+    }
+
+    %normal-12 {
+      @apply font-normal text-12 leading-1_4 tracking-0;
+    }
+
+    .normal-12 {
+      @extend %normal-12;
+    }
+
+    .normal-12-2 {
+      @extend %normal-12;
+
+      @apply uppercase;
+    }
+
+    .bold-12 {
+      @apply font-bold text-12 leading-1_4 tracking-0;
+    }
+
+    .bold-12-2 {
+      @apply font-bold text-12 leading-1_3 tracking-0_5;
+    }
+
+    .normal-14 {
+      @apply font-normal text-14 leading-1_4 tracking-0;
+    }
+
+    .bold-14 {
+      @apply font-bold text-14 leading-1_4 tracking-0;
+    }
+
+    .bold-14-2 {
+      @apply font-bold text-14 leading-1_3 tracking-0_5;
+    }
+
+    .light-16 {
+      @apply font-light text-16 leading-1_4 tracking-m-0_2;
+    }
+
+    .normal-16 {
+      @apply font-normal text-16 leading-1_4 tracking-m-0_2;
+    }
+
+    .normal-16-2 {
+      @apply font-normal text-16 leading-1_2 tracking-1_5;
+    }
+
+    .bold-16 {
+      @apply font-bold text-16 leading-1_25 tracking-m-0_2;
+    }
+
+    .normal-20 {
+      @apply font-normal text-20 leading-1_3 tracking-m-0_3;
+    }
+
+    .bold-20 {
+      @apply font-bold text-20 leading-1_3 tracking-m-0_3;
+    }
+
+    .light-24 {
+      @apply font-light text-24 leading-1_3 tracking-m-0_3;
+    }
+
+    .normal-24 {
+      @apply font-normal text-24 leading-1_3 tracking-m-0_3;
+    }
+
+    .bold-24 {
+      @apply font-bold text-24 leading-1_3 tracking-m-0_3;
+    }
+
+    .normal-28 {
+      @apply font-normal text-28 leading-1_2 tracking-m-0_5;
+    }
+
+    .bold-28 {
+      @apply font-bold text-28 leading-1_2 tracking-m-0_5;
+    }
+
+    .normal-32 {
+      @apply font-normal text-32 leading-1_1 tracking-m-1_5;
+    }
+
+    .bold-32 {
+      @apply font-bold text-32 leading-1_2 tracking-m-0_5;
+    }
+
+    .normal-42 {
+      @apply font-normal text-42 leading-1_1 tracking-m-1_5;
+    }
+
+    .bold-46 {
+      @apply font-bold text-46 leading-1_1 tracking-m-1_5;
+    }
+
+    .bold-54 {
+      @apply font-bold text-54 leading-1_05 tracking-m-1_5;
+    }
+
+    .bold-72 {
+      @apply font-bold text-72 leading-1_1 tracking-m-1;
+    }
+
+    .bold-88 {
+      @apply font-bold text-88 leading-0_95 tracking-m-3_5;
+    }
+  }
+}

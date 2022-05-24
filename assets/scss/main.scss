@@ -1,0 +1,71 @@
+// Purge will remove unused classes, but only if you wrap them in a @layer directive.
+// @layer base, @layer components, @layer utilities
+
+// BASE STYLES
+@import './base/typography';
+@import './base/utilities';
+
+// DESIGN SYSTEM
+@import './ds/buttons';
+@import './ds/inputs';
+
+// TAILWIND
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  font-feature-settings: 'kern' 1;
+  font-feature-settings: 'liga' off;
+  font-feature-settings: 'dlig' off;
+  font-feature-settings: 'tnum' off;
+  font-feature-settings: 'onum' off;
+  font-feature-settings: 'ss01' off;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+
+  @apply font-body antialiased relative;
+}
+
+::selection {
+  @apply text-white;
+
+  background: rgba(255, 60, 0, 0.99);
+  text-shadow: none;
+}
+
+/* stylelint-disable selector-no-qualifying-type */
+
+a,
+area,
+button,
+iframe,
+[tabindex] {
+  @apply outline-none visited:outline-none hover:outline-none active:outline-none focus:outline-none;
+
+  &.focus-visible,
+  &:focus-visible {
+    @apply ring-4 ring-offset-0 ring-offblack-600;
+  }
+
+  &.focus-visible.custom,
+  &:focus-visible.custom {
+    @apply ring-0 border-4 border-solid border-offblack-600;
+  }
+}
+
+input,
+textarea,
+select,
+[contentEditable=true] {
+  @apply outline-none visited:outline-none hover:outline-none active:outline-none focus:outline-none;
+}
+
+a,
+input,
+textarea,
+select,
+button,
+[contentEditable=true] {
+  -webkit-tap-highlight-color: transparent;
+}

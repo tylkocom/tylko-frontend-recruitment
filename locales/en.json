@@ -1,0 +1,50 @@
+{
+  "common": {
+    "other": {
+      "contact_hours_1": "Mon - Fr 8:00 - 24:00 CET",
+      "contact_hours_2": "Sa - Sun 10:00 - 24:00 CET"
+    },
+    "phone-number": {
+      "hotline": "+44 113 868 0195"
+    },
+    "submit": "Submit",
+    "rodo": "Your data is managed by Custom Sp. z o.o. To find out more, visit our ",
+    "rodoLink": "Privacy Policy"
+  },
+  "footer": {
+    "follow_us": "Follow us:",
+    "tylko": "Tylko",
+    "our_mission": "Our Mission",
+    "journal": "Journal",
+    "buying_guide": "Buying Guide",
+    "faq": "FAQ",
+    "terms_of_service": "Terms of Service",
+    "contact": "Contact",
+    "hotline": "Hotline",
+    "language": "Choose your language"
+  },
+  "lp": {
+    "foreverforest": {
+      "body": "Thank you for joining us in helping Forever Forest — a foundation dedicated to planting biodiverse forests in protected areas. How much of your referral reward you like to contribute? ",
+      "caption": "TYLKO × FOREVER FOREST",
+      "label": "Your email (the same you used for purchase)",
+      "large_donation": "Thanks to you, throughout Autumn 2022 the foundation will be able to plant as much as 100m2 of forest.",
+      "meta_title": "Tylko – Plant a forest with us",
+      "no_donation": "If you prefer not to donate your reward, please close this window",
+      "small_donation": "Thanks to your contribution,  in Autumn 2022 we'll be able to plant as much as 50m2 of forest. The remaining half of your reward will be sent to you. ",
+      "thanks": "On behalf of mother earth, we'd like to  thank you for donating your reward to the Forever Forest Foundation. ",
+      "thanks_title": "Planet earth thanks you",
+      "title": "Plant a forest with us"
+    }
+  },
+  "menu": {
+    "labels": {
+      "products": "Products",
+      "reviews": "Reviews",
+      "app": "App",
+      "product-lines": "Product Lines",
+      "material-samples": "Material Samples",
+      "gallery": "Shop the Look"
+    }
+  }
+}

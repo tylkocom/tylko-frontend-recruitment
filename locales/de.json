@@ -1,0 +1,50 @@
+{
+  "const": {
+    "other": {
+      "contact_hours_1": "Mon. - Fr. 8:00 - 24:00 Uhr",
+      "contact_hours_2": "Sa. - So. 10:00 - 24:00 Uhr"
+    },
+    "phone-number": {
+      "hotline": "+49 32 221096672"
+    },
+    "submit": "Senden",
+    "rodo": "Deine Daten werden von Custom Sp. z o.o. verwaltet. Mehr erfährst du in unserer",
+    "rodoLink": "Datenschutzerklärung"
+  },
+  "footer": {
+    "follow_us": "Folge uns auf:",
+    "tylko": "Tylko",
+    "our_mission": "Mission",
+    "journal": "Journal",
+    "buying_guide": "Einkaufen bei Tylko",
+    "faq": "FAQ",
+    "terms_of_service": "AGB",
+    "contact": "Kontakt",
+    "hotline": "Hotline",
+    "language": "Wähle deine Sprache"
+  },
+  "lp": {
+    "foreverforest": {
+      "body": "Danke, dass du Forever Forest unterstützen möchtest. Forever Forest ist eine Stiftung, die sich der Aufforstung biodiverser Wälder in Naturschutzgebieten widmet. Wie viel deiner Empfehlungsprämie möchtest du spenden?",
+      "caption": "TYLKO × FOREVER FOREST",
+      "label": "Deine E-Mail-Adresse",
+      "large_donation": "Mit deiner Spende kann die Stiftung bis Herbst 2022 bis zu 100m2 Waldfläche pflanzen.",
+      "meta_title": "Tylko – Wälder aufforsten",
+      "no_donation": "Falls du deine Prämie lieber doch nicht spenden möchtest, schließe einfach dieses Fenster.",
+      "small_donation": "Mit deiner Spende kann die Stiftung bis Herbst 2022 bis zu 50m2 Waldfläche pflanzen. Die übrige Hälfte deiner Prämie wird dir ausgezahlt.",
+      "thanks": "Im Namen des Planeten möchten wir dir für die Spende deiner Prämie an die Forever Forest Stiftung danken.",
+      "thanks_title": "Mutter Natur sagt Danke",
+      "title": "Hilf uns bei der Aufforstung"
+    }
+  },
+  "menu": {
+    "labels": {
+      "products": "Produkte",
+      "reviews": "Bewertungen",
+      "app": "App",
+      "product-lines": "Produktlinien",
+      "material-samples": "Muster",
+      "gallery": "Hol dir den Look"
+    }
+  }
+}

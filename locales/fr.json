@@ -1,0 +1,50 @@
+{
+  "common": {
+    "other": {
+      "contact_hours_1": "Lun-ven 8h-24h CET",
+      "contact_hours_2": "Sam-dim 10h-24h CET"
+    },
+    "phone-number": {
+      "hotline": "+33 1 76 42 01 08"
+    },
+    "submit": "Soumettre",
+    "rodo": "Vos données sont gérées par Custom Sp. z o.o. Pour en savoir plus, consultez notre ",
+    "rodoLink": "politique de confidentialité"
+  },
+  "footer": {
+    "buying_guide": "Guide d’achat",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "follow_us": "Nous suivre:",
+    "hotline": "Hotline",
+    "journal": "Journal",
+    "our_mission": "Mission",
+    "terms_of_service": "Conditions générales d’utilisation",
+    "tylko": "Tylko",
+    "language": "Langue"
+  },
+  "lp": {
+    "foreverforest": {
+      "body": "Merci de nous avoir rejoins afin d'aider Forever Forest - une fondation dédiée à la plantation de forêts biodiverses dans des zones protégées. Quelle part de votre récompense de parrainage souhaitez-vous contribuer ?",
+      "caption": "TYLKO × FOREVER FOREST",
+      "label": "Votre e-mail (celui que vous avez utilisé pour l'achat)",
+      "large_donation": "Grâce à vous, au cours de l'automne 2022, la fondation pourra planter pas moins de 100m2 de forêt.",
+      "meta_title": "Tylko – Plantez une forêt avec nous",
+      "no_donation": "Si vous préférez ne pas faire don de votre récompense, veuillez fermer cette fenêtre.",
+      "small_donation": "Grâce à votre contribution, nous pourrons planter jusqu'à 50 m2 de forêt à l'automne 2022. La moitié restante de votre récompense vous sera envoyée.",
+      "thanks": "Au nom de Dame Nature, nous vous remercions d'avoir fait don de votre récompense à la Forever Forest Foundation.",
+      "thanks_title": "La planète Terre vous remercie",
+      "title": "Plantez une forêt avec nous"
+    }
+  },
+  "menu": {
+    "labels": {
+      "app": "App",
+      "gallery": "Découvrez le look",
+      "material-samples": "Échantillons de matériaux",
+      "product-lines": "Gammes de produits ",
+      "products": "Produits",
+      "reviews": "Avis"
+    }
+  }
+}
