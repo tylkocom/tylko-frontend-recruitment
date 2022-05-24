@@ -1,9 +1,5 @@
 <template>
-  <header
-    data-section="header"
-  >
-    
-  </header>
+  <header />
 </template>
 
 <script>
