@@ -14,7 +14,7 @@ Kodując korzystaj z naszego design systemu. Na codzień pracujemy z [tailwindcs
 
 Zależy nam na responsywnej stronie, w myśl techniki RWD.
 
-Wszystkie teskty powinny być tłumaczone w trzech językach: Angielski, Niemiecki, Francuski. Odpowiednie pliki z tlumaczeniami znajdują się w repozytorium. Spróbuj również zakodować zmianę języka za pomocą linków w prawym dolnym rogu stopki. Do tego celu możesz skorzystać z paczki [https://i18n.nuxtjs.org/](`nuxt-i18n`)
+Wszystkie teskty powinny być tłumaczone w trzech językach: Angielski, Niemiecki, Francuski. Odpowiednie pliki z tlumaczeniami znajdują się w repozytorium. Spróbuj również zakodować zmianę języka za pomocą linków w prawym dolnym rogu stopki. Do tego celu możesz skorzystać z paczki [nuxt-i18n](https://i18n.nuxtjs.org/).
 
 ## Działanie sekcji
 
