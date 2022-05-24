@@ -2,11 +2,11 @@
 
 ## Projekt
 
-[Pod tym linkiem](https://www.figma.com/file/96kRlhtQqkjQ5gwhVWLUqG/LP-Las-na-zawsze?node-id=0%3A1) znajdziesz prosty Landing Page złożony z jednej headera, sekcji, footera.
+[Pod tym linkiem](https://www.figma.com/file/96kRlhtQqkjQ5gwhVWLUqG/LP-Las-na-zawsze?node-id=0%3A1) znajdziesz prosty Landing Page złożony z headera, jednej sekcji, oraz footera.
 
 ## Ogólne uwagi co do projektu
 
-Na początku chcielibyśmy, abyś zrobił clona naszego repozytorium i ustawił go jako prywatne - to bardzo dla nas ważne. Stwórz nowego brancha, na którym ustawisz pull requesta (ułatwi nam to sprawdzenie Twojej pracy).
+Na początku chcielibyśmy, abyś zrobił/a clona naszego repozytorium i ustawił/a go jako prywatne - to bardzo dla nas ważne. Stwórz nowego brancha, na którym ustawisz pull requesta (ułatwi nam to sprawdzenie Twojej pracy).
 
 Wszelkie linki użyte w projekcie powinny być zaślepkowe, mogą prowadzić np. do google.com
 
@@ -14,7 +14,7 @@ Kodując korzystaj z naszego design systemu. Na codzień pracujemy z [tailwindcs
 
 Zależy nam na responsywnej stronie, w myśl techniki RWD.
 
-Wszystkie teskty powinny być tłumaczone w trzech językach: Angielski, Niemiecki, Francuski. Odpowiednie pliki z tlumaczeniami znajdują się w repozytorium. Spróbuj również zakodować zmianę języka za pomocą linków w prawym dolnym rogu stopki. Do tego celu możesz skorzystać z paczki `nuxt-i18n`
+Wszystkie teskty powinny być tłumaczone w trzech językach: Angielski, Niemiecki, Francuski. Odpowiednie pliki z tlumaczeniami znajdują się w repozytorium. Spróbuj również zakodować zmianę języka za pomocą linków w prawym dolnym rogu stopki. Do tego celu możesz skorzystać z paczki [https://i18n.nuxtjs.org/](`nuxt-i18n`)
 
 ## Działanie sekcji
 
@@ -22,7 +22,9 @@ Zmiana wyboru w radio buttonie powoduje odpowiednią zmiane ikony / tekstu.
 Odpowiednie ikony wyeksportuj z Figmy.
 
 Zdjęcia hostujemy przez cloudinary:
+
 Hero - [https://res.cloudinary.com/cstm/image/upload/v1646825329/lp/foreverforest/hero/A.webp](https://res.cloudinary.com/cstm/image/upload/v1646825329/lp/foreverforest/hero/A.webp)
+
 Logo - [https://res.cloudinary.com/cstm/image/upload/v1646903333/lp/foreverforest/logo/A.webp](https://res.cloudinary.com/cstm/image/upload/v1646903333/lp/foreverforest/logo/A.webp)
 
 Dla uproszczenia przyjmijmy że operujemy walutą Euro.
@@ -31,7 +33,7 @@ Po wciśnięciu przycisku wybrane w forumlarzu dane powinny wysłać się na za�
 
 Jeżeli dane zostały poprawnie wysłane, wyświetl stronę "Thank You"
 
-## Linki
+## Podsumowanie
 
 Link do repozytorium: 
 [https://github.com/tylkocom/tylko-frontend-recruitment](https://github.com/tylkocom/tylko-frontend-recruitment)
