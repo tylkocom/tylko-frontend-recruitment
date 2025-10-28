@@ -1,0 +1,47 @@
+@font-face {
+  font-display: swap;
+  font-family: 'MessinaSansWeb';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 300;
+  src:
+    url('/nuxt3-statics/webfonts/MessinaSansWeb-Light.woff2') format('woff2'),
+    url('/nuxt3-statics/webfonts/MessinaSansWeb-Light.woff') format('woff');
+  unicode-range: U+000D-FB04;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'MessinaSansWeb';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url('/nuxt3-statics/webfonts/MessinaSansWeb-Regular.woff2') format('woff2'),
+    url('/nuxt3-statics/webfonts/MessinaSansWeb-Regular.woff') format('woff');
+  unicode-range: U+000D-FB04;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'MessinaSansWeb';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+  src:
+    url('/nuxt3-statics/webfonts/MessinaSansWeb-SemiBold.woff2') format('woff2'),
+    url('/nuxt3-statics/webfonts/MessinaSansWeb-SemiBold.woff') format('woff');
+  unicode-range: U+000D-FB04;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'MessinaSansWeb';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url('/nuxt3-statics/webfonts/MessinaSansWeb-Bold.woff2') format('woff2'),
+    url('/nuxt3-statics/webfonts/MessinaSansWeb-Bold.woff') format('woff');
+  unicode-range: U+000D-FB04;
+}

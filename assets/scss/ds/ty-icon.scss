@@ -1,0 +1,19 @@
+@layer components {
+  .ty-icon {
+    &--xs {
+      @apply w-16 h-16;
+    }
+
+    &--s {
+      @apply w-20 h-20;
+    }
+
+    &--m {
+      @apply w-24 h-24;
+    }
+
+    &--l {
+      @apply w-32 h-32;
+    }
+  }
+}

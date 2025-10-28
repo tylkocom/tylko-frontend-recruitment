@@ -106,6 +106,13 @@
     }
   }
 
+  &__loading-spinner {
+    &::before {
+      background-image: conic-gradient(transparent 72deg, #fff 360deg);
+      mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #fff 0);
+    }
+  }
+
   &__icon {
     @apply mr-8;
   }
@@ -121,7 +128,20 @@
     @apply active:bg-offblack-600 active:border-offblack-600 active:text-offwhite-600;
     @apply disabled:border-grey-800 disabled:text-grey-800 disabled:cursor-not-allowed;
 
+    &.active {
+      @apply bg-offblack-700 border-offblack-700 text-offwhite-600;
+    }
+
+    .btn-cta__loading-spinner {
+      &::before {
+        background-image: conic-gradient(transparent 72deg, #cad0d0 360deg);
+        mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #cad0d0 0);
+      }
+    }
+
     &:disabled {
+      @apply text-grey-800 border-grey-800 bg-transparent;
+
       svg {
         @apply text-grey-800;
 
@@ -130,6 +150,13 @@
         }
       }
     }
+  }
+
+  &--bg-dark {
+    @apply hover:bg-transparent border border-solid hover:border-offblack-600 hover:text-offblack-600 py-[9px] px-[30px];
+    @apply bg-offblack-700 border-offblack-700 text-offwhite-600;
+    @apply active:bg-offblack-600 active:border-offblack-600 active:text-offwhite-600;
+    @apply disabled:border-grey-800 disabled:text-grey-800 disabled:cursor-not-allowed;
   }
 
   &--border-white {
@@ -147,6 +174,11 @@
         }
       }
     }
+  }
+
+  &--light {
+    @apply bg-white text-neutral-900 font-semibold lg:min-h-[48px];
+    @apply hover:border-offwhite-700 hover:bg-offwhite-700;
   }
 }
 
@@ -179,5 +211,41 @@
 
   &--small {
     @apply text-offblack-600 bold-12 normal-case;
+  }
+}
+
+.btn-pill {
+  @apply px-16 py-8 bg-offwhite-700 text-offblack-600 cursor-pointer normal-14 rounded-full;
+
+  transition: background-color 0.2s ease, color 0.3s ease, transform 0.3s ease, border-color 0.2s ease;
+
+  @apply hover:bg-grey-600 active:bg-grey-700 border border-transparent ;
+  @apply disabled:bg-offwhite-700 disabled:text-grey-800 disabled:cursor-not-allowed;
+
+  &.disabled {
+    @apply bg-offwhite-700 text-grey-800 cursor-not-allowed pointer-events-none;
+  }
+
+  &.active {
+    @apply border-offblack-600;
+  }
+
+  &.disabled.active {
+    @apply pointer-events-auto cursor-pointer;
+  }
+}
+
+.btn-filters-pill {
+  @extend .btn-pill;
+
+  @apply text-neutral-900 min-h-48 normal-16 bg-transparent border border-solid border-neutral-500;
+  @apply hover:bg-neutral-900 hover:bg-opacity-10 active:bg-neutral-900 active:bg-opacity-20;
+
+  &.active {
+    @apply border-neutral-700 border-2;
+  }
+
+  & {
+    line-height: 0 !important;
   }
 }

@@ -1,0 +1,15 @@
+@layer components {
+  .ty-avatar {
+    &--s {
+      .ty-avatar__title {
+        @apply normal-14;
+      }
+    }
+
+    &--m {
+      .ty-avatar__title {
+        @apply normal-16;
+      }
+    }
+  }
+}

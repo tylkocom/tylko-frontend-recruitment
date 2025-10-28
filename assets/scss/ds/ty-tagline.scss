@@ -1,0 +1,25 @@
+@layer components {
+  .ty-tagline {
+    @apply text-neutral-750 uppercase text-ellipsis;
+
+    &--dark {
+      @apply text-neutral-200;
+    }
+
+    &--xs {
+      @apply semibold-12;
+    }
+
+    &--s {
+      @apply semibold-14;
+    }
+
+    &--m {
+      @apply semibold-16;
+    }
+
+    &--l {
+      @apply semibold-18;
+    }
+  }
+}

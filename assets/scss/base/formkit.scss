@@ -1,0 +1,17 @@
+.ty-formkit-select {
+  &:disabled {
+    @apply hover:border-grey-800 #{!important};
+  }
+}
+
+.ty-formkit-outer-select {
+  @apply relative mb-24;
+
+  &[data-disabled='true'] {
+    @apply opacity-30;
+  }
+
+  .formkit-messages {
+    @apply absolute left-0 -bottom-24;
+  }
+}

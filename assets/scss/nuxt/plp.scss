@@ -1,0 +1,82 @@
+.plp-loading {
+  picture:has(img){
+    @apply bg-grey-600;
+  }
+  img, svg{
+    visibility: hidden !important;
+  }
+  .configure-yours{
+    @apply hidden;
+  }
+  div[data-testid="product-card-badge"]{
+    @apply hidden;
+  }
+
+  span, h3, h2, p, picture:has(img) {
+    @apply text-transparent bg-grey-600 line-clamp-1;
+  }
+
+  p{
+    @apply transform scale-x-[45%] origin-left;
+  }
+  span{
+    @apply transform scale-x-75 origin-left;
+  }
+  h2{
+    @apply transform scale-x-100 origin-left;
+  }
+  h3{
+    @apply transform scale-x-[38%] origin-left;
+  }
+}
+
+
+// swiper
+$category-item-width: 112px;
+$categories-count: 12;
+$categories-gap: 16px;
+$categories-grid-padding: 96px;
+$categories-swiper-disable-breakpoint: $category-item-width * $categories-count + $categories-gap * ($categories-count - 1) + $categories-grid-padding;
+
+$categories-with-sofas-count: 13;
+$category-with-sofas-item-width: 102px;
+$categories-with-sofas-swiper-disable-breakpoint: $category-with-sofas-item-width * $categories-with-sofas-count + $categories-gap * ($categories-with-sofas-count - 1) + $categories-grid-padding;
+
+.plp-categories-swiper:deep(.plp-categories-carousel) {
+  @apply max-w-[1632px] mx-auto px-16 md:px-32 lg:px-48 xl:px-56 relative;
+
+  .swiper-wrapper {
+    @media screen and (min-width: $categories-swiper-disable-breakpoint) {
+      transform: translateX(0) !important;
+
+      @apply w-full;
+    }
+  }
+}
+
+.plp-categories-with-sofas-swiper:deep(.plp-categories-carousel) {
+  @apply max-w-[1632px] mx-auto px-16 md:px-32 lg:px-48 xl:px-56 relative;
+
+  .swiper-wrapper {
+    @media screen and (min-width: $categories-with-sofas-swiper-disable-breakpoint) {
+      transform: translateX(0) !important;
+
+      @apply w-full;
+    }
+  }
+}
+
+.plp-categories-swiper:deep(.plp-categories-nav-button) {
+  display: none !important;
+}
+
+//new PLP USP BREAKS styles
+li.usp-break:nth-child(n){
+  @apply row-start-[calc(3+4*var(--order))] md:row-start-[calc(2+2*var(--order))];
+}
+li.usp-break:nth-child(even){
+  @apply col-start-1;
+}
+li.usp-break:nth-child(odd){
+  @apply col-start-2 md:col-start-3 lg2:col-start-4;
+}

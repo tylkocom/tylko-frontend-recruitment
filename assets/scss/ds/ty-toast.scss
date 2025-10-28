@@ -1,0 +1,41 @@
+.ty-toast {
+  .Vue-Toastification__container.bottom-center {
+    @apply bottom-0 py-0 px-8;
+  }
+
+  .Vue-Toastification__toast {
+    @apply rounded-4 mb-8 lg:mb-24;
+
+    .Vue-Toastification__toast-body {
+      @apply text-14;
+    }
+
+    .Vue-Toastification__icon {
+      @apply mr-12;
+    }
+
+    .Vue-Toastification__close-button {
+      @apply w-[36px] h-[36px] p-0 opacity-100;
+    }
+
+    .Vue-Toastification__progress-bar {
+      @apply h-2 bg-white/70;
+    }
+
+    &--error {
+      @apply bg-error-500 min-h-0 py-4 pl-16 pr-4 items-center;
+    }
+
+    &--success {
+      @apply bg-success-500 min-h-0 py-4 pl-16 pr-4 items-center;
+    }
+
+    &--warning {
+      @apply bg-alert-500 min-h-0 py-4 pl-16 pr-4 items-center;
+    }
+
+    &--info {
+      @apply bg-[#1D1E1F] min-h-0 py-4 pl-16 pr-4 items-center;
+    }
+  }
+}

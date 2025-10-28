@@ -1,0 +1,95 @@
+
+.main-nav-bar ul {
+    button,
+    a {
+        &.color-item {
+            @apply text-[#FF3C00] hoverable:hover:text-[#FF3C00];
+        }
+
+        @apply hoverable:hover:text-offblack-900 leading-1 flex items-center p-12 md:px-[6px] xl:px-12;
+        &.desktop-hidden {
+            @apply lg:hidden;
+        }
+
+        &.mobile-hidden {
+            @apply lg-max:hidden;
+        }
+    }
+}
+
+.navbar-item-counter {
+    @apply top-8 right-8 md:top-8 md:right-2 xl:top-8 xl:right-8;
+}
+
+.navigation-reveal {
+    &-enter-active,
+    &-leave-active {
+        @apply overflow-hidden transition-all ease-in-out duration-300;
+    }
+
+    &-enter-from,
+    &-leave-to {
+        @apply lg-max:h-0 #{!important};
+        @apply lg:-translate-y-full;
+    }
+}
+
+.navigation-drawer {
+    @apply absolute top-0 w-full lg:top-full bg-white;
+    @apply overflow-y-auto lg-max:h-[calc((100vh)-var(--ribbon-height))] lg:max-h-[calc((100vh)-var(--header-with-ribbon-height))];
+}
+
+.modern-navigation-page-padding {
+    @apply pt-[var(--navigation-modern-padding)];
+}
+
+.reset-modern-navigation-page-padding {
+    @apply pt-0 #{!important};
+}
+
+.fade-tab {
+  &-enter-active,
+  &-leave-active {
+    @apply ease-in-out transition-opacity top-0 left-0 w-full h-full px-[inherit];
+  }
+  &-enter-active{
+    @apply duration-300;
+    transition-delay: 170ms;
+  }
+  &-leave-active{
+    @apply duration-150
+  }
+
+  &-enter-from,
+  &-leave-to {
+    @apply opacity-0;
+  }
+}
+
+// Modern navigation styles
+.mobile-accordion + .mobile-link {
+  @apply mt-48 #{!important};
+}
+
+.nav-category-group {
+  @apply lg-max:hidden;
+
+  & > a {
+    @apply semibold-24 xl:semibold-32 mb-8 xl:mb-16 block;
+  }
+
+  & > ul {
+    @apply normal-16 space-y-4 xl:space-y-8;
+  }
+  .navi-badge {
+    @apply text-[#C1FF00];
+  }
+}
+
+.navi-badge {
+  @apply relative;
+
+  & > span {
+    @apply semibold-12 ml-[0.25em] block absolute -top-[0.5em] transform left-2 text-nowrap capitalize;
+  }
+}

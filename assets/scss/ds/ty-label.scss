@@ -1,0 +1,29 @@
+@layer components {
+  .ty-label {
+    @apply text-neutral-900 uppercase;
+
+    &--s {
+      @apply semibold-10;
+    }
+
+    &--m {
+      @apply semibold-12;
+    }
+
+    &--new {
+      @apply text-green;
+    }
+
+    &--top {
+      @apply text-cinnamon;
+    }
+
+    &--soon {
+      @apply text-lavender;
+    }
+
+    &--special {
+      @apply text-orange;
+    }
+  }
+}

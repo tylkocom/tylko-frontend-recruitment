@@ -1,0 +1,239 @@
+@layer utilities {
+  .container-cstm {
+    @apply box-content max-w-[1292px] px-16 md:px-32 lg:px-48 xl:px-[88px] xl2:px-128;
+  }
+
+  .container-cstm-fluid {
+    @apply box-content px-16 md:px-32 lg:px-48 xl:px-[88px] xl2:px-128;
+  }
+
+  .grid-container {
+    @apply max-w-[1632px] mx-auto px-16 md:px-32 lg:px-48 xl:px-56;
+  }
+
+  .grid-cols {
+    @apply grid grid-cols-12 gap-x-16;
+  }
+
+  .zoom-in-transition {
+    @apply ease-out duration-700;
+  }
+
+  .long-transition {
+    @apply ease-linear duration-1000;
+  }
+
+  .basic-transition {
+    @apply ease-in-out duration-300;
+  }
+
+  .short-transition {
+    @apply ease-in-out duration-200;
+  }
+
+  .will-change-transform {
+    will-change: transform;
+  }
+
+  .snap-none {
+    scroll-snap-type: none;
+  }
+
+  .snap-x {
+    scroll-snap-type: x var(--tw-scroll-snap-strictness);
+  }
+
+  .snap-mandatory {
+    --tw-scroll-snap-strictness: mandatory;
+  }
+
+  .snap-start {
+    scroll-snap-align: start;
+  }
+
+  .overflow-x-overlay {
+    overflow-x: overlay;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+      width: 0; /* For Chrome, Safari, and Opera */
+    }
+  }
+
+  .seo-container {
+    h2 {
+      @apply bold-20 lg:bold-28 text-offblack-900 mb-8;
+    }
+
+    h3 {
+      @apply bold-16 lg:bold-20 text-offblack-900 mb-8;
+    }
+
+    p {
+      @apply normal-14 lg:normal-16 text-offblack-800 mb-24 lg:mb-32;
+    }
+  }
+}
+
+.full-screen {
+  min-height: calc(100vh - 44px);
+
+  @screen lg {
+    min-height: calc(100vh - 61px);
+  }
+}
+
+.article-page-content {
+  a {
+    @apply text-orange;
+  }
+
+  h2 {
+    @apply bold-28 md:bold-32 xl:bold-46 text-offblack-700 mt-48 mb-8 md:mt-64 md:mb-12 xl:mt-96;
+
+    + div {
+      @apply mt-16;
+    }
+  }
+
+  h4 {
+    @apply normal-24 text-offblack-700 mt-24 mb-48 md:mb-64 xl:mb-96;
+  }
+
+  h3 {
+    @apply normal-24 text-offblack-700 my-24;
+  }
+
+  p:not([class]) {
+    @apply my-8 normal-18;
+
+    + div {
+      @apply mt-16;
+    }
+  }
+
+  div {
+    + p:not([class]) {
+      @apply mt-16;
+    }
+
+    + div {
+      @apply mt-16;
+    }
+  }
+
+  ul {
+    @apply pl-8 my-16 list-disc list-inside;
+
+    li {
+      @apply normal-18;
+
+      &::marker {
+        @apply text-offblack-700;
+      }
+    }
+  }
+
+  > p,
+  > div {
+    @apply last:pb-64 last:mb-0 lg:last:pb-96;
+  }
+
+  img + img {
+    @apply mt-16 lg:mt-0 lg:ml-16;
+  }
+
+  img[src*='/LD.'] {
+    @apply my-16 hidden lg:inline;
+    width: calc(50% - 12px);
+  }
+
+  img[src*='/M.'] {
+    @apply w-full lg:hidden;
+  }
+
+  h5 {
+    @apply normal-16 md:normal-18 md:text-center text-offblack-700 px-16 -mx-16 md:mx-0 my-16;
+  }
+
+  h5:first-of-type {
+    @apply border-t border-grey-700 mt-0 pt-24;
+  }
+
+  h5:last-of-type {
+    @apply border-b border-grey-700 mb-0 pb-24;
+  }
+
+}
+
+.text-capitalize-first-letter {
+  text-transform: lowercase;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.one-line {
+  display: inline-block;
+  height: 18px;
+  overflow: hidden;
+  padding-right: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 222px;
+
+  &::after {
+    content: '...';
+  }
+}
+
+// Pdp seo section
+
+.seo-section {
+  a {
+    @apply text-orange;
+  }
+
+  ul {
+    @apply list-disc ml-24;
+  }
+
+  h1 {
+    @apply bold-32;
+  }
+
+  h2 {
+    @apply bold-28;
+  }
+
+  h3 {
+    @apply bold-20;
+  }
+}
+
+// Custom grid usps classes
+
+@for $i from 1 through 32 {
+  .grid-row-start-#{$i} {
+    grid-row-start: $i;
+  }
+  .grid-col-start-#{$i} {
+    grid-column-start: $i;
+  }
+
+  @screen lg {
+    .lg\:grid-row-start-#{$i} {
+      grid-row-start: $i !important;
+    }
+
+    .lg\:grid-col-start-#{$i} {
+      grid-column-start: $i !important;
+    }
+  }
+}

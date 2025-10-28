@@ -1,0 +1,37 @@
+@layer components {
+  .ty-badge {
+    @apply semibold-12 text-neutral-900 inline-flex items-center justify-center;
+
+    &--s {
+      @apply px-8;
+    }
+
+    &--m {
+      @apply px-8 py-2;
+    }
+
+    &--l {
+      @apply px-8 py-4 w-64 h-64;
+    }
+
+    &--xl {
+      @apply semibold-16 px-8 py-4 w-80 h-80;
+    }
+
+    &--sale {
+      @apply bg-sale;
+    }
+
+    &--new {
+      @apply bg-green text-white;
+    }
+
+    &--special {
+      @apply bg-orange text-white;
+    }
+
+    &--info {
+      @apply bg-white/80;
+    }
+  }
+}

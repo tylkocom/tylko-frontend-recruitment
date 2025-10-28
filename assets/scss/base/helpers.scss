@@ -1,0 +1,58 @@
+@function asset-path($path, $type, $breakpoint, $extension, $transformations) {
+  $provider: 'https://media.tylko.com/cloudinary/';
+  $cloud-name: cstm;
+  $asset-type: image;
+  $delivery-type: upload;
+
+  @return '#{$provider}/#{$transformations}/#{$path}/#{$breakpoint}.#{$extension}';
+}
+
+@mixin bg-image($path, $type, $extension, $transformations: '') {
+  @if $type == 'A' {
+    background-image: url('#{asset-path($path, $type, A, $extension, $transformations)}');
+  }
+
+  @if $type == 'M D' {
+    background-image: url('#{asset-path($path, $type, M, $extension, $transformations)}');
+
+    @screen lg {
+      background-image: url('#{asset-path($path, $type, D, $extension, $transformations)}');
+    }
+  }
+
+  @if $type == 'M T SD LD' {
+    background-image: url('#{asset-path($path, $type, M, $extension, $transformations)}');
+
+    @screen md {
+      background-image: url('#{asset-path($path, $type, T, $extension, $transformations)}');
+    }
+
+    @screen lg {
+      background-image: url('#{asset-path($path, $type, SD, $extension, $transformations)}');
+    }
+
+    @screen xl {
+      background-image: url('#{asset-path($path, $type, LD, $extension, $transformations)}');
+    }
+  }
+
+  @if $type == 'M T SD LD XLD' {
+    background-image: url('#{asset-path($path, $type, M, $extension, $transformations)}');
+
+    @screen md {
+      background-image: url('#{asset-path($path, $type, T, $extension, $transformations)}');
+    }
+
+    @screen lg {
+      background-image: url('#{asset-path($path, $type, SD, $extension, $transformations)}');
+    }
+
+    @screen xl {
+      background-image: url('#{asset-path($path, $type, LD, $extension, $transformations)}');
+    }
+
+    @screen xl2 {
+      background-image: url('#{asset-path($path, $type, XLD, $extension, $transformations)}');
+    }
+  }
+}

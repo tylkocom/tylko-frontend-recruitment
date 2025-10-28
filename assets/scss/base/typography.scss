@@ -1,129 +1,267 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @layer utilities {
-  @responsive {
-    .normal-9 {
-      @apply font-normal text-9 leading-1_4 tracking-0;
-    }
+  .normal-9 {
+    @apply font-normal text-9 leading-1_4 tracking-0;
+  }
 
-    .bold-9 {
-      @apply font-bold text-9 leading-1_4 tracking-0;
-    }
+  .bold-9 {
+    @apply font-bold text-9 leading-1_4 tracking-0;
+  }
 
-    .normal-10 {
-      @apply font-normal text-10 leading-1_4 tracking-0;
-    }
+  .semibold-9 {
+    @apply font-semibold text-9 leading-1_4 tracking-0;
+  }
 
-    .bold-10 {
-      @apply font-bold text-10 leading-1_4 tracking-0;
-    }
+  .normal-10 {
+    @apply font-normal text-10 leading-1_4 tracking-0;
+  }
 
-    .bold-10-2 {
-      @apply font-bold text-10 leading-1_4 tracking-0_5 uppercase;
-    }
+  .bold-10 {
+    @apply font-bold text-10 leading-1_4 tracking-0;
+  }
 
-    %normal-12 {
-      @apply font-normal text-12 leading-1_4 tracking-0;
-    }
+  .bold-10-2 {
+    @apply font-bold text-10 leading-1_4 tracking-0_5 uppercase;
+  }
 
-    .normal-12 {
-      @extend %normal-12;
-    }
+  .semibold-10 {
+    @apply font-semibold text-10 leading-1_4 tracking-0;
+  }
 
-    .normal-12-2 {
-      @extend %normal-12;
+  %normal-12 {
+    @apply font-normal text-12 leading-1_4 tracking-0;
+  }
 
-      @apply uppercase;
-    }
+  .normal-12 {
+    @extend %normal-12;
+  }
 
-    .bold-12 {
-      @apply font-bold text-12 leading-1_4 tracking-0;
-    }
+  .normal-12-2 {
+    @extend %normal-12;
 
-    .bold-12-2 {
-      @apply font-bold text-12 leading-1_3 tracking-0_5;
-    }
+    @apply uppercase;
+  }
 
-    .normal-14 {
-      @apply font-normal text-14 leading-1_4 tracking-0;
-    }
+  .bold-12 {
+    @apply font-bold text-12 leading-1_4 tracking-0;
+  }
 
-    .bold-14 {
-      @apply font-bold text-14 leading-1_4 tracking-0;
-    }
+  .bold-12-2 {
+    @apply font-bold text-12 leading-1_4 tracking-0_5 uppercase;
+  }
 
-    .bold-14-2 {
-      @apply font-bold text-14 leading-1_3 tracking-0_5;
-    }
+  .semibold-12 {
+    @apply font-semibold text-12 leading-1_5 tracking-0;
+  }
 
-    .light-16 {
-      @apply font-light text-16 leading-1_4 tracking-m-0_2;
-    }
+  .normal-13 {
+    @apply font-normal text-13 leading-1_4 tracking-0;
+  }
 
-    .normal-16 {
-      @apply font-normal text-16 leading-1_4 tracking-m-0_2;
-    }
+  .bold-13 {
+    @apply font-bold text-13 leading-1_3 tracking-0;
+  }
 
-    .normal-16-2 {
-      @apply font-normal text-16 leading-1_2 tracking-1_5;
-    }
+  .semibold-13 {
+    @apply font-semibold text-13 leading-1_5 tracking-0;
+  }
 
-    .bold-16 {
-      @apply font-bold text-16 leading-1_25 tracking-m-0_2;
-    }
+  .normal-14 {
+    @apply font-normal text-14 leading-1_4 tracking-0;
+  }
 
-    .normal-20 {
-      @apply font-normal text-20 leading-1_3 tracking-m-0_3;
-    }
+  .bold-14 {
+    @apply font-bold text-14 leading-1_4 tracking-0;
+  }
 
-    .bold-20 {
-      @apply font-bold text-20 leading-1_3 tracking-m-0_3;
-    }
+  .semibold-14 {
+    @apply font-semibold text-14 leading-1_5 tracking-0;
+  }
 
-    .light-24 {
-      @apply font-light text-24 leading-1_3 tracking-m-0_3;
-    }
+  .bold-14-2 {
+    @apply font-bold text-14 leading-1_3 tracking-0_5;
+  }
 
-    .normal-24 {
-      @apply font-normal text-24 leading-1_3 tracking-m-0_3;
-    }
+  .light-16 {
+    @apply font-light text-16 leading-1_4 tracking-m-0_2;
+  }
 
-    .bold-24 {
-      @apply font-bold text-24 leading-1_3 tracking-m-0_3;
-    }
+  .normal-16 {
+    @apply font-normal text-16 leading-1_4 tracking-m-0_2;
+  }
 
-    .normal-28 {
-      @apply font-normal text-28 leading-1_2 tracking-m-0_5;
-    }
+  .normal-16-2 {
+    @apply font-normal text-16 leading-1_2 tracking-1_5;
+  }
 
-    .bold-28 {
-      @apply font-bold text-28 leading-1_2 tracking-m-0_5;
-    }
+  .bold-16 {
+    @apply font-bold text-16 leading-1_25 tracking-m-0_2;
+  }
 
-    .normal-32 {
-      @apply font-normal text-32 leading-1_1 tracking-m-1_5;
-    }
+  .semibold-16 {
+    @apply font-semibold text-16 leading-1_4 tracking-0;
+  }
 
-    .bold-32 {
-      @apply font-bold text-32 leading-1_2 tracking-m-0_5;
-    }
+  .normal-18 {
+    @apply font-normal text-18 leading-1_4 tracking-m-0_2;
+  }
 
-    .normal-42 {
-      @apply font-normal text-42 leading-1_1 tracking-m-1_5;
-    }
+  .bold-18 {
+    @apply font-bold text-18 leading-1_4 tracking-m-0_2;
+  }
 
-    .bold-46 {
-      @apply font-bold text-46 leading-1_1 tracking-m-1_5;
-    }
+  .semibold-18 {
+    @apply font-semibold text-18 leading-1_4 tracking-0;
+  }
 
-    .bold-54 {
-      @apply font-bold text-54 leading-1_05 tracking-m-1_5;
-    }
+  .normal-20 {
+    @apply font-normal text-20 leading-1_3 tracking-m-0_3;
+  }
 
-    .bold-72 {
-      @apply font-bold text-72 leading-1_1 tracking-m-1;
-    }
+  .bold-20 {
+    @apply font-bold text-20 leading-1_3 tracking-m-0_3;
+  }
 
-    .bold-88 {
-      @apply font-bold text-88 leading-0_95 tracking-m-3_5;
-    }
+  .semibold-20 {
+    @apply font-semibold text-20 leading-1_2 tracking-0;
+  }
+
+  .semibold-22 {
+    @apply font-semibold text-22 leading-1_2 tracking-0;
+  }
+
+  .light-24 {
+    @apply font-light text-24 leading-1_3 tracking-m-0_3;
+  }
+
+  .normal-24 {
+    @apply font-normal text-24 leading-1_3 tracking-m-0_3;
+  }
+
+  .bold-24 {
+    @apply font-bold text-24 leading-1_3 tracking-m-0_3;
+  }
+
+  .semibold-24 {
+    @apply font-semibold text-24 leading-1_4 tracking-0;
+  }
+
+  .normal-28 {
+    @apply font-normal text-28 leading-1_2 tracking-m-0_5;
+  }
+
+  .bold-28 {
+    @apply font-bold text-28 leading-1_2 tracking-m-0_5;
+  }
+
+  .semibold-28 {
+    @apply font-semibold text-28 leading-1_4 tracking-m-1;
+  }
+
+  .normal-32 {
+    @apply font-normal text-32 leading-1_1 tracking-m-1_5;
+  }
+
+  .bold-32 {
+    @apply font-bold text-32 leading-1_2 tracking-m-0_5;
+  }
+
+  .semibold-32 {
+    @apply font-semibold text-32 leading-1_2 tracking-m-1;
+  }
+
+  .normal-36 {
+    @apply font-normal text-36 leading-1_1 tracking-m-1_5;
+  }
+
+  .bold-36 {
+    @apply font-bold text-36 leading-1_2 tracking-m-0_5;
+  }
+
+  .semibold-36 {
+    @apply font-semibold text-36 leading-1_2 tracking-m-0_5;
+  }
+
+  .bold-40 {
+    @apply font-bold text-40 leading-1_1 tracking-m-1_5;
+  }
+
+  .semibold-40 {
+    @apply font-semibold text-40 leading-1_2 tracking-m-1;
+  }
+
+  .normal-42 {
+    @apply font-normal text-42 leading-1_1 tracking-m-1_5;
+  }
+
+  .semibold-42 {
+    @apply font-semibold text-42 leading-1_1 tracking-m-1_5;
+  }
+
+  .bold-46 {
+    @apply font-bold text-46 leading-1_1 tracking-m-1_5;
+  }
+
+  .normal-44 {
+    @apply font-normal text-44 leading-1_1 tracking-m-1_5;
+  }
+
+  .semibold-44 {
+    @apply font-semibold text-44 leading-1_1 tracking-m-0_5;
+  }
+
+  .semibold-46 {
+    @apply font-semibold text-46 leading-1_1 tracking-m-1_5;
+  }
+
+  .normal-54 {
+    @apply font-normal text-54 leading-1_1 tracking-m-1_5;
+  }
+
+  .bold-54 {
+    @apply font-bold text-54 leading-1_05 tracking-m-1_5;
+  }
+
+  .semibold-54 {
+    @apply font-semibold text-54 leading-1_2 tracking-m-1;
+  }
+
+  .normal-72 {
+    @apply font-normal text-72 leading-1 tracking-m-2;
+  }
+
+  .bold-72 {
+    @apply font-bold text-72 leading-1_1 tracking-m-1;
+  }
+
+  .semibold-72 {
+    @apply font-semibold text-72 leading-1_1 tracking-m-2;
+  }
+
+  .normal-80 {
+    @apply font-normal text-80 leading-1_2 tracking-m-2;
+  }
+
+  .bold-88 {
+    @apply font-bold text-88 leading-0_95 tracking-m-3_5;
+  }
+
+  .semibold-88 {
+    @apply font-semibold text-88 leading-0_95 tracking-m-3_5;
+  }
+
+  .normal-96 {
+    @apply font-normal text-96 leading-0_95 tracking-m-3_5;
+  }
+
+  .bold-96 {
+    @apply font-bold text-96 leading-0_95 tracking-m-3_5;
+  }
+
+  .semibold-96 {
+    @apply font-semibold text-96 leading-1_1 tracking-m-3;
   }
 }

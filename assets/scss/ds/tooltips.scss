@@ -1,0 +1,68 @@
+.tooltip {
+  @apply block #{!important};
+  @apply z-8;
+
+  .tooltip-inner {
+    @apply bg-white p-16 rounded-12 text-grey-900 normal-14 border-grey-800 border-solid border-2;
+  }
+
+  .tooltip-arrow {
+    @apply absolute border-grey-800 border-solid border-4 h-0 w-0 m-4;
+  }
+
+  &[x-placement^='top'] {
+    @apply pb-4;
+
+    .tooltip-arrow {
+      @apply my-0 bottom-0 border-b-0;
+      @apply border-b-transparent border-l-transparent border-r-transparent;
+
+      left: calc(50% - 4px);
+    }
+  }
+
+  &[x-placement^='bottom'] {
+    @apply pt-4;
+
+    .tooltip-arrow {
+      @apply my-0 top-0 border-t-0;
+      @apply border-t-transparent border-l-transparent border-r-transparent;
+
+      left: calc(50% - 4px);
+    }
+  }
+
+  &[x-placement^='right'] {
+    @apply pl-4;
+
+    .tooltip-arrow {
+      @apply mx-0 left-0 border-l-0;
+      @apply border-b-transparent border-l-transparent border-t-transparent;
+
+      top: calc(50% - 4px);
+    }
+  }
+
+  &[x-placement^='left'] {
+    @apply pr-4;
+
+    .tooltip-arrow {
+      @apply mx-0 right-0 border-r-0;
+      @apply border-b-transparent border-r-transparent border-t-transparent;
+
+      top: calc(50% - 4px);
+    }
+  }
+
+  &[aria-hidden='true'] {
+    @apply invisible opacity-0;
+
+    transition: opacity 0.15s, visibility 0.15s;
+  }
+
+  &[aria-hidden='false'] {
+    @apply visible opacity-100;
+
+    transition: opacity 0.15s;
+  }
+}

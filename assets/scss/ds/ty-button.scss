@@ -1,0 +1,392 @@
+@layer components {
+  .ty-btn-accent {
+    @apply ty-btn bg-orange text-white;
+
+    &:hover {
+      @apply bg-orange-600;
+    }
+
+    &:active {
+      @apply bg-orange-550;
+    }
+
+    &:disabled, &--disabled {
+      @apply bg-orange/[0.12] text-orange-800/[0.38] cursor-not-allowed;
+
+      svg {
+        @apply opacity-[0.38];
+      }
+    }
+
+    &.ty-btn--pending {
+      @apply bg-orange/80 cursor-not-allowed;
+
+      &:hover {
+        @apply bg-orange/80;
+      }
+    }
+
+    &--dark {
+      &:disabled {
+        @apply text-white/[0.38];
+
+        svg {
+          @apply opacity-[0.38];
+        }
+      }
+    }
+  }
+
+  .ty-btn-filled {
+    @apply ty-btn bg-neutral-900 text-white;
+
+    &:hover {
+      @apply bg-neutral-750;
+    }
+
+    &:active {
+      @apply bg-neutral-800;
+    }
+
+    &:disabled {
+      @apply bg-neutral-900/[0.12] text-neutral-900/[0.38] cursor-not-allowed;
+
+      svg {
+        @apply opacity-[0.38];
+      }
+    }
+
+    &.ty-btn--pending {
+      @apply bg-neutral-900/80 cursor-not-allowed;
+
+      &:hover {
+        @apply bg-neutral-900/80;
+      }
+    }
+
+    &--dark {
+      @apply bg-white text-neutral-900;
+
+      &.ty-btn--pending {
+        --spinner-color: #3a3c3d;
+
+        @apply bg-white/80;
+
+        &:hover {
+          @apply bg-white/80;
+        }
+      }
+
+      &:hover {
+        @apply bg-neutral-400 text-neutral-900;
+      }
+
+      &:active {
+        @apply bg-neutral-200;
+      }
+
+      &:disabled {
+        @apply bg-white/[0.12] text-white/[0.38];
+
+        svg {
+          @apply opacity-[0.38];
+        }
+      }
+    }
+  }
+
+  .ty-btn-outlined {
+    // This apply overwrites variables so we need to put it at the top
+    @apply ty-btn text-neutral-900 border border-neutral-900;
+
+    --spinner-color: #3a3c3d;
+
+    &:hover {
+      @apply bg-neutral-900/[0.12];
+    }
+
+    &:active {
+      @apply bg-neutral-900/[0.08];
+    }
+
+    &.active {
+      @apply bg-neutral-900 text-white #{!important};
+    }
+
+    &:disabled, &--disabled {
+      @apply bg-transparent text-neutral-900/[0.38] border-neutral-900/[0.38] cursor-not-allowed;
+
+      svg {
+        @apply opacity-[0.38];
+      }
+    }
+
+    &.ty-btn--pending {
+      @apply bg-transparent cursor-not-allowed;
+
+      &:hover {
+        @apply bg-transparent;
+      }
+    }
+
+    &--dark {
+      @apply border-white text-white;
+
+      &.active {
+        @apply text-neutral-900 bg-white #{!important};
+      }
+
+      &:hover {
+        @apply bg-white/[0.12] text-white;
+      }
+
+      &:active {
+        @apply bg-white/[0.08];
+      }
+
+      &:disabled {
+        @apply border-white/[0.38] text-neutral-200/[0.38];
+
+        svg {
+          @apply opacity-[0.38];
+        }
+
+        &:hover {
+          @apply bg-transparent;
+        }
+      }
+
+      &.ty-btn--pending {
+        --spinner-color: #3a3c3d;
+
+        @apply border-white/80;
+
+        &:hover {
+          @apply bg-transparent;
+        }
+      }
+    }
+    &.bg-white:hover {
+      background-color: white !important;
+    }
+  }
+
+  /* Button underlined */
+
+  .ty-btn-underlined {
+    @apply relative inline-flex text-neutral-700 bold-14;
+
+    &::after {
+      @apply absolute bottom-0 left-0 w-full scale-x-100 origin-left h-1 bg-neutral-900 transition-transform duration-300 ease-in-out;
+      content: '';
+    }
+
+    @apply hover:after:origin-right hover:after:scale-x-0;
+    @apply active:after:origin-right active:after:scale-x-0;
+    @apply disabled:after:hidden;
+
+    &:disabled {
+      @apply cursor-not-allowed text-neutral-900/[0.38];
+    }
+
+    &.active {
+      &::after {
+        @apply w-[80%];
+      }
+    }
+
+    &--big {
+      @apply text-neutral-900 semibold-54;
+    }
+  }
+
+  /* END Button Underlined */
+
+  /* END Button Outlined */
+
+  .ty-btn {
+    --spinner-color: #fff;
+
+    @apply inline-flex items-center justify-center cursor-pointer semibold-16 rounded-[24px] py-8 px-24 lg:py-12;
+
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease,
+      transform 0.3s ease,
+      border-color 0.3s ease;
+
+    svg {
+      @apply mr-4 -ml-4 md:mr-8 md:-ml-8 w-20 h-20;
+    }
+
+    &--pending {
+      @apply pl-16;
+
+      .loading-spinner {
+          @apply -ml-8;
+
+        + svg {
+          @apply hidden;
+        }
+
+        &::before {
+          background-image: conic-gradient(transparent 72deg,
+            var(--spinner-color) 360deg);
+          mask: radial-gradient(farthest-side,
+            transparent calc(100% - 2px),
+            var(--spinner-color) 0);
+        }
+      }
+    }
+
+    &--s {
+      @apply semibold-14 lg:py-8;
+    }
+
+    &--m {
+      @apply semibold-16;
+
+      svg {
+        @apply w-24 h-24;
+      }
+    }
+
+    &--l {
+      @apply semibold-18;
+
+      svg {
+        @apply w-24 h-24;
+      }
+    }
+
+    &--xl {
+      @apply min-h-48 px-24 md:min-h-64 md:px-32 rounded-full;
+    }
+  }
+
+  .ty-btn-icon {
+    @apply ty-btn;
+
+    &--s {
+      @apply semibold-12 pl-8 pr-12 py-0 h-24;
+
+      svg {
+        @apply ty-icon--xs mr-4;
+      }
+    }
+
+    &--m {
+      @apply pl-16 pr-24 py-8;
+
+      svg {
+        @apply ty-icon--m ml-0;
+      }
+    }
+  }
+
+  .ty-btn-rounded-icon {
+    @apply rounded-full bg-transparent w-40 h-40 flex justify-center items-center shrink-0 border text-neutral-900;
+
+    &:hover {
+      @apply bg-neutral-900/[0.12];
+    }
+
+    &:active {
+      @apply bg-neutral-900/[0.08];
+    }
+
+    svg {
+      @apply ty-icon--m;
+    }
+
+    &--s {
+      @apply w-[36px] h-[36px];
+
+      svg {
+        @apply ty-icon--s;
+      }
+    }
+
+    &--l {
+      @apply w-48 h-48;
+    }
+
+    &--dark {
+      @apply text-white;
+    }
+  }
+
+  .ty-btn-rounded-icon-outlined {
+    @apply ty-btn-rounded-icon bg-transparent border-neutral-900 text-neutral-900 transition-colors basic-transition;
+
+    &--dark {
+      @apply border-white text-white;
+
+      &.active {
+        @apply text-neutral-900 bg-white #{!important};
+      }
+
+      &:hover {
+        @apply bg-white/[0.12];
+      }
+    }
+
+    &:hover {
+      @apply bg-neutral-900/[0.12];
+    }
+
+    &:active {
+      @apply bg-white/[0.08];
+    }
+
+    &:disabled {
+      @apply border-white/[0.38] text-neutral-200/[0.38];
+
+      svg {
+        @apply opacity-[0.38];
+      }
+
+      &:hover {
+        @apply bg-transparent;
+      }
+    }
+  }
+
+  .ty-btn-rounded-icon-filled {
+    @apply ty-btn-rounded-icon bg-orange-500 text-white border-transparent transition-colors basic-transition;
+
+    &:hover {
+      @apply bg-orange-500;
+    }
+
+    &--s {
+      @apply w-[36px] h-[36px];
+    }
+  }
+
+  .ty-btn-close {
+    @apply text-neutral-900 rounded-full transition-colors bg-neutral-100/90 hover:bg-neutral-100 active:bg-neutral-100 disabled:bg-neutral-100/[0.12] p-12;
+
+    svg {
+      @apply ty-icon--m;
+    }
+  }
+
+  .ty-btn-configurator-button {
+    @apply min-w-[64px] h-48 border border-neutral-400 rounded-4 p-8 transition-colors basic-transition normal-14 text-neutral-900;
+    &:hover {
+      @apply text-white bg-neutral-900 border-neutral-900;
+    }
+    &.active {
+      @apply text-white bg-neutral-900 border-neutral-900;
+    }
+  }
+}
+
+.pending-spinner {
+  @apply after:animate-spin after:rounded-full after:w-[1em] after:h-[1em] after:inline-block flex items-center gap-x-8;
+  &::after {
+    background-image: conic-gradient(transparent 72deg, currentColor 360deg);
+    mask: radial-gradient(farthest-side, transparent calc(100% - 2px), currentColor 0);
+  }
+}

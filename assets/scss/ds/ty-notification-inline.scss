@@ -1,0 +1,69 @@
+@layer components {
+  .ty-notification-inline {
+    &--s {
+      @apply pl-8;
+
+      .ty-notification-inline__content {
+        @apply mr-[44px];
+      }
+
+      .ty-notification-inline__close {
+        @apply top-0 right-0;
+      }
+
+      .ty-notification-inline__text {
+        @apply normal-12;
+      }
+    }
+
+    &--m {
+      @apply py-8 pl-16 pr-8;
+
+      .ty-notification-inline__content {
+        @apply mr-[36px];
+      }
+
+      .ty-notification-inline__close {
+        @apply top-8 right-8;
+      }
+
+      .ty-notification-inline__text {
+        @apply normal-14;
+      }
+    }
+
+    &.ty-notification-inline--error {
+      @apply bg-error-100;
+    }
+
+    &.ty-notification-inline--success {
+      @apply bg-success-100;
+    }
+
+    &.ty-notification-inline--alert {
+      @apply bg-alert-100;
+    }
+
+    &.ty-notification-inline--info {
+      @apply border-neutral-900;
+    }
+
+    .ty-notification-inline__icon {
+      &--success {
+        @apply text-success-500;
+      }
+
+      &--error {
+        @apply text-error-500;
+      }
+
+      &--alert {
+        @apply text-alert-500;
+      }
+
+      &--info {
+        @apply text-neutral-900;
+      }
+    }
+  }
+}

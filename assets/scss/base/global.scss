@@ -1,0 +1,91 @@
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scrollbar-gutter: stable;
+}
+
+body {
+  font-feature-settings: 'kern' 1;
+  font-feature-settings: 'liga' off;
+  font-feature-settings: 'dlig' off;
+  font-feature-settings: 'tnum' off;
+  font-feature-settings: 'onum' off;
+  font-feature-settings: 'ss01' off;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+
+  @apply font-body antialiased relative;
+}
+
+::selection {
+  @apply text-white;
+
+  background: rgba(255, 60, 0, 0.99);
+  text-shadow: none;
+}
+
+picture,
+img,
+svg {
+  user-select: none;
+}
+
+/* stylelint-disable selector-no-qualifying-type */
+:root {
+  --vh: 100vh;
+  --header-height: 56px;
+  --current-header-height: 56px;
+  /* stylelint-disable-next-line */
+  --ribbon-height: 0px;
+  /* stylelint-disable-next-line */
+  --ribbon-height-without-counter: 0px;
+  --header-with-ribbon-height: calc(var(--ribbon-height) + var(--header-height));
+  // Header height with ribbon, without counter if exists on mobile
+  --header-height-without-counter: calc(var(--ribbon-height-without-counter) + var(--header-height));
+
+  @media screen and (min-width: 1024px) {
+    --header-height: 64px;
+  }
+}
+
+.sticky-to-header {
+  @apply top-[var(--current-header-height)];
+}
+
+a,
+button,
+iframe,
+[tabindex] {
+  @apply outline-none visited:outline-none hover:outline-none active:outline-none focus:outline-none;
+
+  &.focus-visible,
+  &:focus-visible {
+    @apply ring-2 ring-offset-2 ring-offblack-600;
+  }
+
+  &.focus-visible.custom,
+  &:focus-visible.custom {
+    @apply ring-2 ring-offset-2 ring-offblack-600;
+  }
+}
+
+input,
+textarea,
+select,
+[contentEditable=true] {
+  @apply outline-none visited:outline-none hover:outline-none active:outline-none focus:outline-none;
+}
+
+a,
+input,
+textarea,
+select,
+button,
+[contentEditable=true] {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button.custom {
+  &:focus-visible {
+    box-shadow: none !important;
+  }
+}

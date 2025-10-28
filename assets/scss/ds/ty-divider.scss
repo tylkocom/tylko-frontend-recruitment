@@ -1,0 +1,13 @@
+@layer components {
+  .ty-divider {
+    @apply border-t border-neutral-500;
+
+    &--strong {
+      @apply border-neutral-900;
+    }
+
+    &--subtle {
+      @apply border-neutral-400;
+    }
+  }
+}
