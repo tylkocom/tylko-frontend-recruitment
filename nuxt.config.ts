@@ -24,9 +24,15 @@ export default defineNuxtConfig({
     }
   },
 
-
   app: {
-    buildAssetsDir: '_nuxt3/'
+    buildAssetsDir: '_nuxt3/',
+    // SEO
+    head: {
+      title: 'tylko',
+      htmlAttrs: {
+        lang: 'en',
+      },
+    },
   },
 
   devServer: {
@@ -34,5 +40,4 @@ export default defineNuxtConfig({
   },
 
   css: ['@/assets/scss/main.scss'],
-
 });
