@@ -98,7 +98,7 @@ const activeCategory = computed(() => {
 })
 
 // Redirect to home if active category is not valid
-if (!activeCategory.value) router.push('/')
+if (!activeCategory.value) navigateTo('/')
 
 // Fetching - products
 const {
